@@ -1,0 +1,139 @@
+.heading_home {
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+    border: 5px;
+    border-radius: 20px;
+    padding: 15px;
+    padding-inline-end: 20px;
+    margin: 5px;
+    text-decoration-line: none;
+
+}
+.nav_bar {
+    text-align: center;
+    background-color: darkslategray;
+    font-family: cursive;
+   background: darkblue;
+    font-size: 20px;
+    font-family: cursive;
+    color: white;
+
+   
+}
+body 
+{
+    background-size:cover;
+    background-position:center;
+    font-family: cursive;
+    border-radius: 10px;
+   
+    background-color: darkgray;
+}
+.menu_bar_tr
+{
+    text-align: center;
+    background-color:blue;
+    background: darkblue;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    text-decoration-line: none;
+    border: 20px;
+    border-radius: 20px;
+
+    
+    
+}
+.menu_bar_td
+{
+    text-decoration:burlywood;
+    display:inline-flex;
+list-style:none;
+color:white;
+scroll-behavior: auto;
+margin: 10px;
+border: chartreuse;
+border-radius: 20px;
+overflow: hidden; 
+display:inline-flex;
+scroll-behavior: auto;
+
+}
+.gb_item_extrainfo {
+	overflow: hidden;
+	padding: 5px 0px;
+    margin: 5px;
+    background-color: aqua;
+}
+.gb_normal_mysection {
+	float: left;
+	padding-left: 15px;
+	width: 78%;
+    background-color: blue;
+}
+.gb_thumbnail_wrapper{
+	width:'';
+}
+.sign_up_link
+{
+    margin: 20px;
+    background-color:darkcyan;
+    border: 5px;
+    border-radius: 20px;
+    padding: 4px;
+    text-decoration-line: none;
+}
+.footer_bar
+{
+    background-color: black;
+    color: white;
+    
+}
+
+.gb_services
+{
+    background-size: 100px;
+    
+    font-family: cursive;
+}
+.gb_home
+{
+    font-family: cursive;
+    color: white;
+    text-align: center;
+    text-anchor: ;
+    text-underline-position: none;
+}
+.gb_textarea
+{
+    width: 700px;
+    height: 300px;
+}
+.gb_announce
+{
+    width: 100px;
+    height:100px;
+}
+.menu_bar_form
+{
+    
+    top: 50;
+    width: 40px;
+    background: darkblue;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    text-decoration-line: none;
+    border: 20px;
+    border-radius: 20px;
+    width: 200px;
+    text-align: left;
+    position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 400px;
+border-radius: 10px;
+text-align: center;
+    }

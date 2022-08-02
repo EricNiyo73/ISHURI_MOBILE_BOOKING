@@ -1,0 +1,52 @@
+<?php
+$con = mysqli_connect("localhost", "root", "", "ISHURIMOBILE");
+if(isset($_POST['submit']))
+{
+  
+  $username = $_REQUEST["Names"];
+  $country = $_REQUEST["Country"];
+  $province = $_REQUEST["Province"];
+  $district = $_REQUEST["District"];
+  $sector = $_REQUEST["Sector"];
+   
+  $semail = $_REQUEST["SchoolEmail"];
+  $Phone = $_REQUEST["SchoolPhone"];
+  $combi = $_REQUEST["Combinations"];
+  $detail = $_REQUEST["Details"];
+  
+    $querry= "INSERT INTO SCHOOL_APP_FORM (Names,Country,Province,District,Sector,SchoolEmail,SchoolPhone,Combinations,Details) VALUES ('$username','$country','$province','$district','$sector','$semail',$Phone,'$combi','&detail')";
+    $rs = mysqli_query($con, $querry);
+            // Check if the connection is established
+            if($rs){
+                echo "<p style='color:darkblue;'>$username    is well registered<br/></p>";
+            }else{
+                echo "<p style='color:red;' ".mysqli_error($con)."</p>";
+            }
+}
+?>
+
+<!DOCTYPE html>
+<head><title></title><link rel="stylesheet" href="cssstyle.css">
+</head>
+    <body><div class="menu_bar_tr">
+        <section >
+    
+            <p>Create account Here</p>
+     <form action="" method="post">
+        
+        Name of Organization:<input type="text" name="Names" required placeholder="APAGE MUSHA"><span style="color:red;">*</span><br><br>
+        Country:<input type="text" name="Country" required><span style="color:red;">*</span><br><br>
+        Province:<input type="text" name="Province" required><span style="color:red;">*</span><br><br>
+        District:<input type="text" name="District" required><span style="color:red;">*</span><br><br>
+        Sector:<input type="text" name="Sector" required><br><br>
+        
+        SchoolEmail:<input type="email" name="SchoolEmail" required placeholder="ericniyokwizerwa1@gmail.com"><span style="color:red;">*</span><br><br>
+        SchoolPhone:<input type="tel" name="SchoolPhone" required><span style="color:red;">*</span><br><br>
+        Combinations:<input type="text" name="Combinations" required><span style="color:red;">*</span><br><br>
+         <textarea name="Details" placeholder="write Here school Details such as achievement,some opportunities to the Students and Teachers and all over the Country" required></textarea><span style="color:red;">*</span><br>
+        <input type="submit" name="submit" value="Create">
+     </form>
+    </section></div>
+    </body>
+
+</html>
